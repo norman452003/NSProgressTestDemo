@@ -14,6 +14,7 @@
 		D21B78541D1D1904000E419E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21B78531D1D1904000E419E /* Assets.xcassets */; };
 		D21B78571D1D1904000E419E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21B78551D1D1904000E419E /* LaunchScreen.storyboard */; };
 		D21B78601D1D216C000E419E /* DonwloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B785F1D1D216C000E419E /* DonwloadOperation.m */; };
+		D2E3C7181D20CBB900041398 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E3C7171D20CBB900041398 /* OneViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		D21B78581D1D1904000E419E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D21B785E1D1D216C000E419E /* DonwloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonwloadOperation.h; sourceTree = "<group>"; };
 		D21B785F1D1D216C000E419E /* DonwloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonwloadOperation.m; sourceTree = "<group>"; };
+		D2E3C7161D20CBB900041398 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		D2E3C7171D20CBB900041398 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 			children = (
 				D21B784A1D1D1904000E419E /* AppDelegate.h */,
 				D21B784B1D1D1904000E419E /* AppDelegate.m */,
+				D2E3C7161D20CBB900041398 /* OneViewController.h */,
+				D2E3C7171D20CBB900041398 /* OneViewController.m */,
 				D21B784D1D1D1904000E419E /* ViewController.h */,
 				D21B784E1D1D1904000E419E /* ViewController.m */,
 				D21B785E1D1D216C000E419E /* DonwloadOperation.h */,
@@ -155,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D21B784F1D1D1904000E419E /* ViewController.m in Sources */,
+				D2E3C7181D20CBB900041398 /* OneViewController.m in Sources */,
 				D21B784C1D1D1904000E419E /* AppDelegate.m in Sources */,
 				D21B78491D1D1904000E419E /* main.m in Sources */,
 				D21B78601D1D216C000E419E /* DonwloadOperation.m in Sources */,

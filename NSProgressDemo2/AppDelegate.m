@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "OneViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    OneViewController *one = [storyboard instantiateViewControllerWithIdentifier:@"123"];
+    UINavigationController *naiv = [[UINavigationController alloc] initWithRootViewController:one];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = naiv;
+    self.window.backgroundColor = [UIColor whiteColor];
+    
     return YES;
 }
 

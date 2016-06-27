@@ -67,7 +67,7 @@
 }
 
 - (void)startDownload{
-
+    __weak typeof(self) weakSelf = self;
     long totalSize = 1;
     _mainProgress = [NSProgress progressWithTotalUnitCount:totalSize * 2];
     [_mainProgress addObserver:self forKeyPath:@"fractionCompleted" options:NSKeyValueObservingOptionInitial context:nil];
@@ -75,7 +75,7 @@
     
     DonwloadOperation *task1 = [[DonwloadOperation alloc] initWithURL:@"http://m4.pc6.com/cjh3/mpegstreamclip.dmg" progress:^(NSProgress *progress) {
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-            _progressView1.progress = progress.fractionCompleted;
+            weakSelf.progressView1.progress = progress.fractionCompleted;
         }];
     } complete:^(NSData *data) {
         
@@ -87,7 +87,7 @@
     
     DonwloadOperation *task2 = [[DonwloadOperation alloc] initWithURL:@"http://down.sandai.net/mac/thunder_dl2.6.9.1826_Beta.dmg" progress:^(NSProgress *progress) {
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-            _progressView2.progress = progress.fractionCompleted;
+            weakSelf.progressView2.progress = progress.fractionCompleted;
         }];
     } complete:^(NSData *data) {
         
@@ -99,8 +99,9 @@
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
+    __weak typeof(self) weakSelf = self;
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-        _mainProgressView.progress = _mainProgress.fractionCompleted;
+        weakSelf.mainProgressView.progress = weakSelf.mainProgress.fractionCompleted;
     }];
 }
 
@@ -124,6 +125,11 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)dealloc{
+    NSLog(@"%s",__func__);
+    [self.mainProgress removeObserver:self forKeyPath:@"fractionCompleted"];
 }
 
 @end

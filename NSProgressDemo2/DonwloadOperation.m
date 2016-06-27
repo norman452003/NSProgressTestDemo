@@ -85,6 +85,7 @@ static NSString* const ExecutingKey = @"isExecuting";
     if (_completeBlock) {
         _completeBlock(self.mData.copy);
     }
+    [self.progress removeObserver:self forKeyPath:@"fractionCompleted"];
     self.finished = YES;
 }
 
@@ -119,6 +120,10 @@ static NSString* const ExecutingKey = @"isExecuting";
 
 - (BOOL)isAsynchronous {
     return YES;
+}
+
+- (void)dealloc{
+    NSLog(@"%s",__func__);
 }
 
 @end
