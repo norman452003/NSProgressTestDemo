@@ -13,6 +13,7 @@
 		D21B78521D1D1904000E419E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21B78501D1D1904000E419E /* Main.storyboard */; };
 		D21B78541D1D1904000E419E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21B78531D1D1904000E419E /* Assets.xcassets */; };
 		D21B78571D1D1904000E419E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21B78551D1D1904000E419E /* LaunchScreen.storyboard */; };
+		D21B78601D1D216C000E419E /* DonwloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B785F1D1D216C000E419E /* DonwloadOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		D21B78531D1D1904000E419E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D21B78561D1D1904000E419E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D21B78581D1D1904000E419E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D21B785E1D1D216C000E419E /* DonwloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonwloadOperation.h; sourceTree = "<group>"; };
+		D21B785F1D1D216C000E419E /* DonwloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonwloadOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				D21B784B1D1D1904000E419E /* AppDelegate.m */,
 				D21B784D1D1D1904000E419E /* ViewController.h */,
 				D21B784E1D1D1904000E419E /* ViewController.m */,
+				D21B785E1D1D216C000E419E /* DonwloadOperation.h */,
+				D21B785F1D1D216C000E419E /* DonwloadOperation.m */,
 				D21B78501D1D1904000E419E /* Main.storyboard */,
 				D21B78531D1D1904000E419E /* Assets.xcassets */,
 				D21B78551D1D1904000E419E /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 				D21B784F1D1D1904000E419E /* ViewController.m in Sources */,
 				D21B784C1D1D1904000E419E /* AppDelegate.m in Sources */,
 				D21B78491D1D1904000E419E /* main.m in Sources */,
+				D21B78601D1D216C000E419E /* DonwloadOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +308,7 @@
 				D21B785D1D1D1904000E419E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
